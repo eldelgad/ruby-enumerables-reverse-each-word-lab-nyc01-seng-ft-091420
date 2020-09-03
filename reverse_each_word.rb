@@ -1,10 +1,10 @@
 def reverse_each_word(string)
   
-  string = string.split
+  reversed = string.split(" ").collect do |element|
+    
+    word.reverse
   
-  string.each do |word|
-    string.reverse
   end
-  string.join(" ")
-  
+
+  reversed.join(" ")
 end
